@@ -1,0 +1,46 @@
+---
+title: "My Map"
+author: "Aline Meret Mähr"
+date: "6/9/2020"
+output: html_document
+---
+
+This is an assignment for course 9 Developing Data Products of the Coursera Data Science Specialisation. For this assignment, an interactive map is created using Leaflet in RMarkdown and hosted on GitHub Pages.
+
+My map shows locations I visit in my free time. 
+
+```{r package, message=FALSE, echo=FALSE}
+library(leaflet)
+```
+
+
+```{r map, echo=FALSE}
+# Make dataframe with locations
+locations <- data.frame(
+lat = c(55.688029, 55.6667743, 55.6577816, 55.6915204, 55.6732528, 55.6671355, 55.6466765, 55.6463977, 55.6544532, 55.6855167, 55.6739004), lng = c(12.5492863, 12.5436118, 12.6058026, 12.5577127, 12.5570918, 12.546122, 12.5517723, 12.5294512, 12.6081844, 12.5700422, 12.5513186))
+
+# Make list if pop up text and weblinks for locations
+pop = c(
+  "<a href='http://www.kuso.dk/'>Orchestra Rehearsal</a>",
+  "<a href='https://www.facebook.com/BEATKBH/'>Record Store</a>",
+  "<a href='https://www.facebook.com/amagerrecords/'>Second Hand Record Store</a>",
+  "<a href='http://alicecph.com/en/'>Cozy Concert Hall</a>",
+  "<a href='https://www.stofogstil.dk/'>Big Yarn Shop</a>",
+  "<a href='https://langsamt.com/en/'>My friend's cool substainable clothing shop</a>",
+  "Bathing Spot",
+  "Cute Lambs by the Library",
+  "<a href='https://www.hophouse.dk/beer'>Good Tap House for a Saturday Afternoon</a>",
+  "Walk in the Botanical Garden",
+  "Favorit Supermarket")
+
+
+
+# Create my map
+locations %>%
+leaflet() %>%
+addTiles() %>%
+addMarkers(popup = pop)
+
+
+
+```
