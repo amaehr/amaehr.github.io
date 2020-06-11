@@ -188,7 +188,7 @@ input,
 select,
 textarea {
     color: #1c1c1c;
-    font-family: 'Monserrat', sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-size: 16pt;
     font-weight: 400;
     line-height: 1.75em;
@@ -2013,10 +2013,6 @@ input[type="radio"]+label:before {
     background: rgb(255, 255, 255);
     background: linear-gradient(0deg, rgba(255, 255, 255, 1) 15%, rgba(176, 194, 178, 1) 100%);
     height: 15em;
-    border-radius: 0;
-}
-
-.image.main img {
     border-radius: 0;
 }
 
