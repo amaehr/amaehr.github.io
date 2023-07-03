@@ -1,43 +1,82 @@
 <!DOCTYPE html>
 
 <html lang="en">
+  <head>
+    <script>
+      (function (m, a, z, e) {
+        var s, t;
+        try {
+          t = m.sessionStorage.getItem("maze-us");
+        } catch (err) {}
 
-<head>
+        if (!t) {
+          t = new Date().getTime();
+          try {
+            m.sessionStorage.setItem("maze-us", t);
+          } catch (err) {}
+        }
+
+        s = a.createElement("script");
+        s.src = z + "?t=" + t + "&apiKey=" + e;
+        s.async = true;
+        a.getElementsByTagName("head")[0].appendChild(s);
+        m.mazeUniversalSnippetApiKey = e;
+      })(
+        window,
+        document,
+        "https://snippet.maze.co/maze-universal-loader.js",
+        "ae46325b-8a69-4b74-8066-6e5d33702cac"
+      );
+    </script>
     <title>Aline Mähr</title>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=5"
+    />
     <link rel="stylesheet" href="assets/css/main.css" />
-    <meta name="Description" content="Aline Mähr, a programming UX researcher currently improving doctors' lives." />
-</head>
+    <meta
+      name="Description"
+      content="Aline Mähr, a programming UX researcher currently improving doctors' lives."
+    />
+  </head>
 
-<body class="is-preload">
+  <body class="is-preload">
     <!-- Header -->
     <section id="header">
-        <header>
-            <span class="image avatar">
+      <header>
+        <span class="image avatar">
           <picture>
             <source srcset="images/img1.webp" type="image/webp" />
             <source srcset="images/img1.png" type="image/png" />
-            <img src="images/img1.png" alt="Aline with plants in the background" />
+            <img
+              src="images/img1.png"
+              alt="Aline with plants in the background"
+            />
           </picture>
         </span>
-            <h1 id="logo"><a href="#">ALINE MÄHR</a></h1>
-            <p>A programming UX researcher & designer</p>
-        </header>
-        <nav id="nav">
-            <ul>
-                <li><a href="#one" class="active">About</a></li>
-                <li><a href="#two">Toolbox</a></li>
-                <li><a href="#three">Experience</a></li>
-                <li><a href="#four">Education</a></li>
-                <li><a href="#five">Other Things I Do</a></li>
-                <!-- <li><a href="#six">Contact</a></li> -->
-            </ul>
-        </nav>
-        <footer>
-            <ul class="icons">
-                <li>
-                    <a href="https://www.linkedin.com/in/aline-meret-m%C3%A4hr/" target="_blank" rel="noopener" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a
+        <h1 id="logo"><a href="#">ALINE MÄHR</a></h1>
+        <p>A programming UX researcher & designer</p>
+      </header>
+      <nav id="nav">
+        <ul>
+          <li><a href="#one" class="active">About</a></li>
+          <li><a href="#two">Toolbox</a></li>
+          <li><a href="#three">Experience</a></li>
+          <li><a href="#four">Education</a></li>
+          <li><a href="#five">Other Things I Do</a></li>
+          <!-- <li><a href="#six">Contact</a></li> -->
+        </ul>
+      </nav>
+      <footer>
+        <ul class="icons">
+          <li>
+            <a
+              href="https://www.linkedin.com/in/aline-meret-m%C3%A4hr/"
+              target="_blank"
+              rel="noopener"
+              class="icon brands fa-linkedin"
+              ><span class="label">LinkedIn</span></a
             >
           </li>
           <li>
@@ -72,14 +111,16 @@
               <h2>About</h2>
             </header>
             <p>
-              I am a programming user researcher & ux designer with an educational background
-               in cognitive science and the humanities. Rooted in my academic training in research
-                methods and data processing, combined with 5+ years of experience within the field,
-                 I know how to operationalise data-driven insights into engaging user experience
-                  design. Currently, I am working as a user researcher on digital products within
-                   the payment sector, where I combine qualitative insights with quantitive insights
-                    to reflect users attidudes as well as their actual behaviour to steer user-centric
-                     design. 
+              I am a programming user researcher & ux designer with an
+              educational background in cognitive science and the humanities.
+              Rooted in my academic training in research methods and data
+              processing, combined with 5+ years of experience within the field,
+              I know how to operationalise data-driven insights into engaging
+              user experience design. Currently, I am working as a user
+              researcher on digital products within the payment sector, where I
+              combine qualitative insights with quantitive insights to reflect
+              users attidudes as well as their actual behaviour to steer
+              user-centric design.
             </p>
           </div>
         </section>
@@ -114,135 +155,216 @@
           <h3>Experience</h3>
           <div class="features">
             <article>
-              <a href="https://www.nets.eu/dk-da" target="-blank" rel="noopener" class="image">
-                  <picture>
-                      <source srcset="images/netsLogoColored.webp" type="image/webp" />
-                      <source srcset="images/netsLogoColored.svg" type="image/svg" />
-                      <img src="images/netsLogoColored.svg" alt="Nets" />
-                  </picture>
+              <a
+                href="https://www.nets.eu/dk-da"
+                target="-blank"
+                rel="noopener"
+                class="image"
+              >
+                <picture>
+                  <source
+                    srcset="images/netsLogoColored.webp"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="images/netsLogoColored.svg"
+                    type="image/svg"
+                  />
+                  <img src="images/netsLogoColored.svg" alt="Nets" />
+                </picture>
               </a>
-                    <div class="inner">
-                        <h4>User Researcher</h4>
-                        <h5>Nets A/S | March 2022 - current</h5>
-                        <p>
-                            I engage with our users of our digital merchant portals and apps to gain insights into their needs, test design concepts or obtain feedack on solutions. I analyse analytics data to validate hypotheses, support data-driven design and measure the effects
-                            of ux improvements.
-                        </p>
-                    </div>
-                    </article>
-                    <article>
-                        <a href="https://www.ambu.com/" target="-blank" rel="noopener" class="image">
-                            <picture>
-                                <source srcset="images/Ambu-logo-Red-RGB.png" type="image/png" />
-                                <img src="images/Ambu-logo-Red-RGB.png" alt="Ambu" />
-                            </picture>
-                        </a>
-                        <div class="inner">
-                            <h4>UX Designer & Researcher</h4>
-                            <h5>Ambu A/S | Septermber 2020 - February 2022</h5>
-                            <p>
-                                I have worked within the displaying units team, where I designed the GUI for embedded software for endoscopy monitors. In my role as a researcher, I gathered insights and tested early design concpets and physical prototypes.
-                            </p>
-                        </div>
-                    </article>
-                    <article>
-                        <a href="https://www.designpsykologi.dk/" target="-blank" rel="noopener" class="image">
-                            <picture>
-                                <source srcset="images/logo+EN+version+White.webp" type="image/webp" />
-                                <source srcset="images/logo+EN+version+White.png" type="image/png" />
-                                <img src="images/logo+EN+version+White.png" alt="DPSY" />
-                            </picture>
-                        </a>
-                        <div class="inner">
-                            <h4>UX & Data Analyst</h4>
-                            <h5>DesignPyskologi A/S | January 2018 - May 2020</h5>
-                            <p>
-                                I had project responsibility within our UXLab department. I stood for the development of new testing methods within our R&D as well as the execution and project management of client projects. Furthermore, I was involved in client projects to help design
-                                products, both visually and with a focus on user interaction.
-                            </p>
-                        </div>
-                    </article>
-                    <article>
-                        <a href="https://ritualis.ch/" target="-blank" rel="noopener" class="image">
-                            <picture>
-                                <source srcset="images/ritualis_banner-e1566497925513.webp" type="image/webp" />
-                                <source srcset="images/ritualis_banner-e1566497925513.jpg" type="image/jpg" />
-                                <img src="images/ritualis_banner-e1566497925513.jpg" alt="ritualis" />
-                            </picture>
-                        </a>
-                        <div class="inner">
-                            <h4>Team Member</h4>
-                            <h5>Ritualis GmbH | 2008 - 2018</h5>
-                            <p>
-                                Student job as a consulting for IT solutions. The area of responsibilities consisted primarily of correspondence, back-office services and database maintenance.
-                            </p>
-                        </div>
-                    </article>
+              <div class="inner">
+                <h4>User Researcher</h4>
+                <h5>Nets A/S | March 2022 - current</h5>
+                <p>
+                  I engage with our users of our digital merchant portals and
+                  apps to gain insights into their needs, test design concepts
+                  or obtain feedack on solutions. I analyse analytics data to
+                  validate hypotheses, support data-driven design and measure
+                  the effects of ux improvements.
+                </p>
+              </div>
+            </article>
+            <article>
+              <a
+                href="https://www.ambu.com/"
+                target="-blank"
+                rel="noopener"
+                class="image"
+              >
+                <picture>
+                  <source
+                    srcset="images/Ambu-logo-Red-RGB.png"
+                    type="image/png"
+                  />
+                  <img src="images/Ambu-logo-Red-RGB.png" alt="Ambu" />
+                </picture>
+              </a>
+              <div class="inner">
+                <h4>UX Designer & Researcher</h4>
+                <h5>Ambu A/S | Septermber 2020 - February 2022</h5>
+                <p>
+                  I have worked within the displaying units team, where I
+                  designed the GUI for embedded software for endoscopy monitors.
+                  In my role as a researcher, I gathered insights and tested
+                  early design concpets and physical prototypes.
+                </p>
+              </div>
+            </article>
+            <article>
+              <a
+                href="https://www.designpsykologi.dk/"
+                target="-blank"
+                rel="noopener"
+                class="image"
+              >
+                <picture>
+                  <source
+                    srcset="images/logo+EN+version+White.webp"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="images/logo+EN+version+White.png"
+                    type="image/png"
+                  />
+                  <img src="images/logo+EN+version+White.png" alt="DPSY" />
+                </picture>
+              </a>
+              <div class="inner">
+                <h4>UX & Data Analyst</h4>
+                <h5>DesignPyskologi A/S | January 2018 - May 2020</h5>
+                <p>
+                  I had project responsibility within our UXLab department. I
+                  stood for the development of new testing methods within our
+                  R&D as well as the execution and project management of client
+                  projects. Furthermore, I was involved in client projects to
+                  help design products, both visually and with a focus on user
+                  interaction.
+                </p>
+              </div>
+            </article>
+            <article>
+              <a
+                href="https://ritualis.ch/"
+                target="-blank"
+                rel="noopener"
+                class="image"
+              >
+                <picture>
+                  <source
+                    srcset="images/ritualis_banner-e1566497925513.webp"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="images/ritualis_banner-e1566497925513.jpg"
+                    type="image/jpg"
+                  />
+                  <img
+                    src="images/ritualis_banner-e1566497925513.jpg"
+                    alt="ritualis"
+                  />
+                </picture>
+              </a>
+              <div class="inner">
+                <h4>Team Member</h4>
+                <h5>Ritualis GmbH | 2008 - 2018</h5>
+                <p>
+                  Student job as a consulting for IT solutions. The area of
+                  responsibilities consisted primarily of correspondence,
+                  back-office services and database maintenance.
+                </p>
+              </div>
+            </article>
+          </div>
+        </section>
 
-                    </div>
-    </section>
-
-    <!-- Four -->
-    <section id="four">
-        <div class="container">
+        <!-- Four -->
+        <section id="four">
+          <div class="container">
             <h3>Education</h3>
             <p>
-                Feel free to reach out if you want to know more or see my grades.
+              Feel free to reach out if you want to know more or see my grades.
             </p>
             <div class="features">
-                <article>
-                    <a href="" class="image">
-                        <picture>
-                            <source srcset="images/au.webp" type="image/webp" />
-                            <source srcset="images/au.jpg" type="image/jpg" />
-                            <img src="images/au.jpg" alt="AU" />
-                        </picture>
-                    </a>
-                    <div class="inner">
-                        <h4>Cand. Mag. in Cognitive Semiotics</h4>
-                        <p>
-                            Master of Arts which is closely linked to cognitive science with a focus on how people process information. This includes cognitive linguistics, understanding of perception systems, social cognition, and how the brain works.
-                        </p>
-                    </div>
-                </article>
-                <article>
-                    <a href="" class="image">
-                        <picture>
-                            <source srcset="images/university-of-zurich-uzh-vector-logo.webp" type="image/webp" />
-                            <source srcset="images/university-of-zurich-uzh-vector-logo.png" type="image/png" />
-                            <img src="images/university-of-zurich-uzh-vector-logo.png" alt="UZH" />
-                        </picture>
-                    </a>
-                    <div class="inner">
-                        <h4>Bachelor of Arts</h4>
-                        <p>
-                            Major in Scandinavian Studies, Minors in Philosophy and Media & Communication Studies.
-                        </p>
-                    </div>
-                </article>
+              <article>
+                <a href="" class="image">
+                  <picture>
+                    <source srcset="images/au.webp" type="image/webp" />
+                    <source srcset="images/au.jpg" type="image/jpg" />
+                    <img src="images/au.jpg" alt="AU" />
+                  </picture>
+                </a>
+                <div class="inner">
+                  <h4>Cand. Mag. in Cognitive Semiotics</h4>
+                  <p>
+                    Master of Arts which is closely linked to cognitive science
+                    with a focus on how people process information. This
+                    includes cognitive linguistics, understanding of perception
+                    systems, social cognition, and how the brain works.
+                  </p>
+                </div>
+              </article>
+              <article>
+                <a href="" class="image">
+                  <picture>
+                    <source
+                      srcset="images/university-of-zurich-uzh-vector-logo.webp"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="images/university-of-zurich-uzh-vector-logo.png"
+                      type="image/png"
+                    />
+                    <img
+                      src="images/university-of-zurich-uzh-vector-logo.png"
+                      alt="UZH"
+                    />
+                  </picture>
+                </a>
+                <div class="inner">
+                  <h4>Bachelor of Arts</h4>
+                  <p>
+                    Major in Scandinavian Studies, Minors in Philosophy and
+                    Media & Communication Studies.
+                  </p>
+                </div>
+              </article>
             </div>
-        </div>
-    </section>
+          </div>
+        </section>
 
-    <!-- Five -->
-    <section id="five">
-        <div class="container">
+        <!-- Five -->
+        <section id="five">
+          <div class="container">
             <h3>Other Things I Do</h3>
             <p>Some of the things I like to do when I'm not at work.</p>
             <div class="features">
-                <article>
-                    <a href="https://open-museum.ch/" target="_blank" rel="noopener" class="image">
-                        <picture>
-                            <source srcset="images/logo.svg" type="image/svg" />
-                            <img src="images/logo.svg" alt="OpenMuseum" />
-                        </picture>
-                    </a>
-                    <div class="inner">
-                        <h4>OpenMuseum</h4>
-                        <p>
-                            The open-museum is an independent digital museum and was created as part of the #VersusVirus hackathon within 48 hours. It is important to us that despite the restrictions under the Covid 19 pandemic, art and culture can be discovered together. The audio
-                            chat function enables communication with other visitors - almost like in a “real” museum. Our museum is built entirely on public domain content. You can browse our
-                            <a href="https://collections.open-museum.ch/s/open-museum/page/welcome">collection</a
+              <article>
+                <a
+                  href="https://open-museum.ch/"
+                  target="_blank"
+                  rel="noopener"
+                  class="image"
+                >
+                  <picture>
+                    <source srcset="images/logo.svg" type="image/svg" />
+                    <img src="images/logo.svg" alt="OpenMuseum" />
+                  </picture>
+                </a>
+                <div class="inner">
+                  <h4>OpenMuseum</h4>
+                  <p>
+                    The open-museum is an independent digital museum and was
+                    created as part of the #VersusVirus hackathon within 48
+                    hours. It is important to us that despite the restrictions
+                    under the Covid 19 pandemic, art and culture can be
+                    discovered together. The audio chat function enables
+                    communication with other visitors - almost like in a “real”
+                    museum. Our museum is built entirely on public domain
+                    content. You can browse our
+                    <a
+                      href="https://collections.open-museum.ch/s/open-museum/page/welcome"
+                      >collection</a
                     >
                     or check out the
                     <a href="https://github.com/open-museum/open-museum.ch"
@@ -266,28 +388,36 @@
                     <img src="images/coursera-vector-logo.png" alt="Coursera" />
                   </picture>
                 </a>
-                            <div class="inner">
-                                <h4>MOOC Certificates</h4>
-                                <p>
-                                    I like to keep busy doing online courses. Learning new things inspires me and sparks new ideas in my worklife. I am currently working on a specialisation in Data Science in R. A list over my certificates can be seen on my
-                                    <a href="https://www.linkedin.com/in/aline-meret-m%C3%A4hr/">LinkedIn profile</a>.
-                                </p>
-                            </div>
-                </article>
-                <article>
-                    <a href="#" class="image">
-                        <picture>
-                            <source srcset="images/kuso.webp" type="image/webp" />
-                            <source srcset="images/kuso.png" type="image/png" />
-                            <img src="images/kuso.png" alt="Kuso" />
-                        </picture>
-                    </a>
-                    <div class="inner">
-                        <h4>Orchestra Member</h4>
-                        <p>
-                            I am playing the bassoon in a classical orchestra. Check out our
-                            <a href="http://www.kuso.dk/">kuso homepage</a> for more infos or go to our
-                            <a href="https://soundcloud.com/kuso_orchestra">soundcloud</a
+                <div class="inner">
+                  <h4>MOOC Certificates</h4>
+                  <p>
+                    I like to keep busy doing online courses. Learning new
+                    things inspires me and sparks new ideas in my worklife. I am
+                    currently working on a specialisation in Data Science in R.
+                    A list over my certificates can be seen on my
+                    <a href="https://www.linkedin.com/in/aline-meret-m%C3%A4hr/"
+                      >LinkedIn profile</a
+                    >.
+                  </p>
+                </div>
+              </article>
+              <article>
+                <a href="#" class="image">
+                  <picture>
+                    <source srcset="images/kuso.webp" type="image/webp" />
+                    <source srcset="images/kuso.png" type="image/png" />
+                    <img src="images/kuso.png" alt="Kuso" />
+                  </picture>
+                </a>
+                <div class="inner">
+                  <h4>Orchestra Member</h4>
+                  <p>
+                    I am playing the bassoon in a classical orchestra. Check out
+                    our
+                    <a href="http://www.kuso.dk/">kuso homepage</a> for more
+                    infos or go to our
+                    <a href="https://soundcloud.com/kuso_orchestra"
+                      >soundcloud</a
                     >
                     to hear us play.
                   </p>
