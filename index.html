@@ -1,482 +1,388 @@
 <!DOCTYPE html>
-
 <html lang="en">
-  <head>
-    <!-- <script>
-      (function (m, a, z, e) {
-        var s, t;
-        try {
-          t = m.sessionStorage.getItem("maze-us");
-        } catch (err) {}
 
-        if (!t) {
-          t = new Date().getTime();
-          try {
-            m.sessionStorage.setItem("maze-us", t);
-          } catch (err) {}
-        }
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Aline Mähr </title>
+        <script src="https://unpkg.com/feather-icons"></script>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script src="https://unpkg.com/@botpoison/browser" async></script>
+    </head>
 
-        s = a.createElement("script");
-        s.src = z + "?t=" + t + "&apiKey=" + e;
-        s.async = true;
-        a.getElementsByTagName("head")[0].appendChild(s);
-        m.mazeUniversalSnippetApiKey = e;
-      })(
-        window,
-        document,
-        "https://snippet.maze.co/maze-universal-loader.js",
-        "ae46325b-8a69-4b74-8066-6e5d33702cac"
-      ); -->
-    <!-- </script> -->
-    <title>Aline Mähr</title>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, maximum-scale=5"
-    />
-    <link rel="stylesheet" href="assets/css/main.css" />
-    <meta
-      name="Description"
-      content="Aline Mähr, a programming UX researcher currently improving card payment services for merchants."
-    />
-  </head>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Aline Mähr - User Researcher</title>
+        <meta name="description"
+          content="Trained in cognition, resaerch methods, and data processing, combined with 5+ years of experience. ">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta property="og:title" content="Aline Mähr">
+        <meta property="og:type" content="Homepage">
+        <meta property="og:url" content="https://amaehr.github.io/">
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
+        <meta name="theme-color" content="#DCFCE6">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script src="https://unpkg.com/@botpoison/browser" async></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.5.5/flowbite.js"
+          integrity="sha512-lSxnJNKWGNnJI/N7MqwyK32+OToXiGK9KWm2ZTcZ3F1hMYmrYYbI1JvkZlImUiut44pUcB/FzlJWMVcfpaABjw=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://unpkg.com/feather-icons"></script>
+        <script>
+          tailwind.config = {
+            theme: {
+              extend: {
+                fontFamily: {
+                  sans: ["Barlow", "sans-serif"],
+                  serif: ["Merriweather", "serif"],
+                },
+              },
+            },
+          };
+        </script>
+      </head>
 
-  <body class="is-preload">
-    <!-- Header -->
-    <section id="header">
-      <header>
-        <span class="image avatar">
-          <picture>
-            <source srcset="images/img1.webp" type="image/webp" />
-            <source srcset="images/img1.png" type="image/png" />
-            <img
-              src="images/img1.png"
-              alt="Aline with plants in the background"
-            />
-          </picture>
-        </span>
-        <h1 id="logo"><a href="#">ALINE MÄHR</a></h1>
-        <p>A programming UX researcher & designer</p>
-      </header>
-      <nav id="nav">
-        <ul>
-          <li><a href="#one" class="active">About</a></li>
-          <li><a href="#two">Toolbox</a></li>
-          <li><a href="#three">Experience</a></li>
-          <li><a href="#four">Education</a></li>
-          <li><a href="#five">Other Things I Do</a></li>
-          <!-- <li><a href="#six">Contact</a></li> -->
-        </ul>
-      </nav>
-      <footer>
-        <ul class="icons">
-          <li>
-            <a
-              href="https://www.linkedin.com/in/aline-meret-m%C3%A4hr/"
-              target="_blank"
-              rel="noopener"
-              class="icon brands fa-linkedin"
-              ><span class="label">LinkedIn</span></a
-            >
-          </li>
-          <li>
-            <a
-              href="https://github.com/amaehr"
-              target="_blank"
-              rel="noopener"
-              class="icon brands fa-github"
-              ><span class="label">Github</span></a
-            >
-          </li>
-          <li>
-            <a
-              href="mailto: alinemeret.maehr@gmail.com"
-              class="icon solid fa-envelope"
-              ><span class="label">Email</span></a
-            >
-          </li>
-        </ul>
-      </footer>
-    </section>
+    <body class="bg-gray-100">
+        
+        <section class="py-10 md:py-10">
 
-    <!-- Wrapper -->
-    <div id="wrapper">
-      <!-- Main -->
-      <div id="main">
-        <!-- One -->
-        <section id="one">
-          <div class="image main" data-position="center"></div>
-          <div class="container">
-            <header class="major">
-              <h2>About</h2>
-            </header>
-            <p>
-              I am a programming user researcher & ux designer with an
-              educational background in cognitive science and the humanities.
-              Rooted in my academic training in research methods and data
-              processing, combined with 5+ years of experience within the field,
-              I know how to operationalise data-driven insights into engaging
-              user experience design. Currently, I am working as a user
-              researcher on digital products within the payment sector, where I
-              combine qualitative insights with quantitive insights to reflect
-              users attidudes as well as their actual behaviour to steer
-              user-centric design.
-            </p>
-          </div>
-        </section>
+            <div class="container max-w-screen-xl mx-auto px-4">
 
-        <!-- Two -->
-        <section id="two">
-          <div class="container">
-            <h3>Toolbox</h3>
-            <p>
-              Here are some of the tools I like to use. The list is though not
-              extensive, so reach out to ask for more.
-            </p>
-            <ul class="feature-icons">
-              <li class="icon solid fa-search">
-                UX research qualitative & quantitative
-              </li>
-              <li class="icon solid fa-users">Human-centered design</li>
-              <li class="icon solid fa-edit">UX & UI design</li>
-              <li class="icon solid fa-palette">
-                Create wireframes and mockups
-              </li>
-              <li class="icon solid fa-code">
-                Write code in R, Python, CSS and HTML
-              </li>
-              <li class="icon solid fa-tasks">Project management</li>
-            </ul>
-          </div>
-        </section>
+                <nav class="flex justify-end mb-12 ">
+                    <button class="px-7 py-3 md:px-9 md:py-4 bg-white font-medium md:font-semibold text-gray-700 text-md rounded-md hover:bg-gray-700 hover:text-white transition ease-linear duration-500"> 
+                        <a href="/assets/image/20240103_CV.pdf" target="_blank"
+                        class="">Get my CV
+                    </button>
+                </nav>
 
-        <!-- Three -->
-        <section id="three" <div class="container">
-          <h3>Experience</h3>
-          <div class="features">
-            <article>
-              <a
-                href="https://www.nets.eu/dk-da"
-                target="-blank"
-                rel="noopener"
-                class="image"
-              >
-                <picture>
-                  <source
-                    srcset="images/netsLogoColored.webp"
-                    type="image/webp"
-                  />
-                  <source
-                    srcset="images/netsLogoColored.svg"
-                    type="image/svg"
-                  />
-                  <img src="images/netsLogoColored.svg" alt="Nets" />
-                </picture>
-              </a>
-              <div class="inner">
-                <h4>User Researcher</h4>
-                <h5>Nets A/S | March 2022 - current</h5>
-                <p>
-                  I engage with our users of our digital merchant portals and
-                  apps to gain insights into their needs, test design concepts
-                  or obtain feedack on solutions. I analyse analytics data to
-                  validate hypotheses, support data-driven design and measure
-                  the effects of ux improvements.
-                </p>
-              </div>
-            </article>
-            <article>
-              <a
-                href="https://www.ambu.com/"
-                target="-blank"
-                rel="noopener"
-                class="image"
-              >
-                <picture>
-                  <source
-                    srcset="images/Ambu-logo-Red-RGB.png"
-                    type="image/png"
-                  />
-                  <img src="images/Ambu-logo-Red-RGB.png" alt="Ambu" />
-                </picture>
-              </a>
-              <div class="inner">
-                <h4>UX Designer & Researcher</h4>
-                <h5>Ambu A/S | Septermber 2020 - February 2022</h5>
-                <p>
-                  I have worked within the displaying units team, where I
-                  designed the GUI for embedded software for endoscopy monitors.
-                  In my role as a researcher, I gathered insights and tested
-                  early design concpets and physical prototypes.
-                </p>
-              </div>
-            </article>
-            <article>
-              <a
-                href="https://www.designpsykologi.dk/"
-                target="-blank"
-                rel="noopener"
-                class="image"
-              >
-                <picture>
-                  <source
-                    srcset="images/logo+EN+version+White.webp"
-                    type="image/webp"
-                  />
-                  <source
-                    srcset="images/logo+EN+version+White.png"
-                    type="image/png"
-                  />
-                  <img src="images/logo+EN+version+White.png" alt="DPSY" />
-                </picture>
-              </a>
-              <div class="inner">
-                <h4>UX & Data Analyst</h4>
-                <h5>DesignPyskologi A/S | January 2018 - May 2020</h5>
-                <p>
-                  I had project responsibility within our UXLab department. I
-                  stood for the development of new testing methods within our
-                  R&D as well as the execution and project management of client
-                  projects. Furthermore, I was involved in client projects to
-                  help design products, both visually and with a focus on user
-                  interaction.
-                </p>
-              </div>
-            </article>
-            <article>
-              <a
-                href="https://ritualis.ch/"
-                target="-blank"
-                rel="noopener"
-                class="image"
-              >
-                <picture>
-                  <source
-                    srcset="images/ritualis_banner-e1566497925513.webp"
-                    type="image/webp"
-                  />
-                  <source
-                    srcset="images/ritualis_banner-e1566497925513.jpg"
-                    type="image/jpg"
-                  />
-                  <img
-                    src="images/ritualis_banner-e1566497925513.jpg"
-                    alt="ritualis"
-                  />
-                </picture>
-              </a>
-              <div class="inner">
-                <h4>Team Member</h4>
-                <h5>Ritualis GmbH | 2008 - 2018</h5>
-                <p>
-                  Student job as a consulting for IT solutions. The area of
-                  responsibilities consisted primarily of correspondence,
-                  back-office services and database maintenance.
-                </p>
-              </div>
-            </article>
-          </div>
-        </section>
+                <div class="text-center justify-center">
+                    <div class="flex justify-center mb-8  ">
+                        <img src="assets/image/home-img.png" alt="Image" class="w-52">
+                    </div>
+                    
+                    <h6 class="font-bold text-gray-600 text-lg md:text-2xl uppercase mb-8 ">Aline Mähr</h6>
 
-        <!-- Four -->
-        <section id="four">
-          <div class="container">
-            <h3>Education</h3>
-            <p>
-              Feel free to reach out if you want to know more or see my grades.
-            </p>
-            <div class="features">
-              <article>
-                <a href="" class="image">
-                  <picture>
-                    <source srcset="images/au.webp" type="image/webp" />
-                    <source srcset="images/au.jpg" type="image/jpg" />
-                    <img src="images/au.jpg" alt="AU" />
-                  </picture>
-                </a>
-                <div class="inner">
-                  <h4>Cand. Mag. in Cognitive Semiotics</h4>
-                  <p>
-                    Master of Arts which is closely linked to cognitive science
-                    with a focus on how people process information. This
-                    includes cognitive linguistics, understanding of perception
-                    systems, social cognition, and how the brain works.
-                  </p>
+                    <h1 class="font-thin text-gray-900 text-4xl md:text-5xl leading-none mb-8"> User Researcher</h1>
+                    <div class="flex justify-center">
+                        <p class="font-light text-gray-600 text-md md:text-xl px-4 md:w-2/3 justify-self-center">Trained in cognition, research methods, and data processing, combined with 5+ years of experience within user research, I know how to generate and activate data-driven insights. For me, user research means supporting product development by informing and validating the creation of meaningful products and experiences for our users; assisting leadership in their decision-making by providing user insights; and most importantly, being the users’ advocate.</p>
+
+                    </div>
+
                 </div>
-              </article>
-              <article>
-                <a href="" class="image">
-                  <picture>
-                    <source
-                      srcset="images/university-of-zurich-uzh-vector-logo.webp"
-                      type="image/webp"
-                    />
-                    <source
-                      srcset="images/university-of-zurich-uzh-vector-logo.png"
-                      type="image/png"
-                    />
-                    <img
-                      src="images/university-of-zurich-uzh-vector-logo.png"
-                      alt="UZH"
-                    />
-                  </picture>
-                </a>
-                <div class="inner">
-                  <h4>Bachelor of Arts</h4>
-                  <p>
-                    Major in Scandinavian Studies, Minors in Philosophy and
-                    Media & Communication Studies.
-                  </p>
-                </div>
-              </article>
+
             </div>
-          </div>
+
         </section>
 
-        <!-- Five -->
-        <section id="five">
-          <div class="container">
-            <h3>Other Things I Do</h3>
-            <p>Some of the things I like to do when I'm not at work.</p>
-            <div class="features">
-              <article>
-                <a
-                  href="https://open-museum.ch/"
-                  target="_blank"
-                  rel="noopener"
-                  class="image"
-                >
-                  <picture>
-                    <source srcset="images/logo.svg" type="image/svg" />
-                    <img src="images/logo.svg" alt="OpenMuseum" />
-                  </picture>
-                </a>
-                <div class="inner">
-                  <h4>OpenMuseum</h4>
-                  <p>
-                    The open-museum is an independent digital museum and was
-                    created as part of the #VersusVirus hackathon within 48
-                    hours. It is important to us that despite the restrictions
-                    under the Covid 19 pandemic, art and culture can be
-                    discovered together. The audio chat function enables
-                    communication with other visitors - almost like in a “real”
-                    museum. Our museum is built entirely on public domain
-                    content. You can browse our
-                    <a
-                      href="https://collections.open-museum.ch/s/open-museum/page/welcome"
-                      >collection</a
-                    >
-                    or check out the
-                    <a href="https://github.com/open-museum/open-museum.ch"
-                      >source code</a
-                    >
-                    and help us improve our code.
-                  </p>
+<!--Skills-->
+
+        <section class="py-10 ">
+
+            <div class="container max-w-screen-xl mx-auto px-4">
+
+                <div class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 lg:gap-6">
+                    <div class=" px-8 md:py-10 rounded-md ">
+                        <div class="w-20 py-6 flex justify-center bg-green-100 rounded-md mb-4">
+                            <i data-feather="triangle"></i>
+                        </div>
+
+                        <h4 class="font-medium text-gray-700 text-lg mb-4">Connected</h4>
+
+                        <p class="font-normal text-gray-500 text-md"> I connect different data points and sources <br>to create user insights. Applying different research methods to triangulate and get a deeper understanding.</p>
+                    </div>
+
+                    <div class=" px-8 py-10 rounded-md">
+                        <div class="w-20 py-6 flex justify-center bg-purple-100 rounded-md mb-4">
+                            <i data-feather="heart"></i>
+                        </div>
+
+                        <h4 class="font-medium text-gray-700 text-lg mb-4">Empathic</h4>
+
+                        <p class="font-normal text-gray-500 text-md">I emphasize with users, colleagues and stakholders to understand complexities and opportunities. I am passionate about my work and exicted to learn new things.</p>
+                    </div>
+
+                    <div class=" px-8 py-10 rounded-md">
+                        <div class="w-20 py-6 flex justify-center bg-yellow-100 rounded-md mb-4">
+                            <i data-feather="square"></i>
+                        </div>
+
+                        <h4 class="font-medium text-gray-700 text-lg mb-4">Analytical</h4>
+
+                        <p class="font-normal text-gray-500 text-md">I can't help but to analyse and find patterns. I notice details and inconsistencies and strive to resolve them. I want to understand how things work and bring structure to them.</p>
+                    </div>
+                    
+
+                    
+
                 </div>
-              </article>
-              <article>
-                <a href="#" class="image">
-                  <picture>
-                    <source
-                      srcset="images/coursera-vector-logo.webp"
-                      type="image/webp"
-                    />
-                    <source
-                      srcset="images/coursera-vector-logo.png"
-                      type="image/png"
-                    />
-                    <img src="images/coursera-vector-logo.png" alt="Coursera" />
-                  </picture>
-                </a>
-                <div class="inner">
-                  <h4>MOOC Certificates</h4>
-                  <p>
-                    I like to keep busy doing online courses. Learning new
-                    things inspires me and sparks new ideas in my worklife. I am
-                    currently working on a specialisation in Data Science in R.
-                    A list over my certificates can be seen on my
-                    <a href="https://www.linkedin.com/in/aline-meret-m%C3%A4hr/"
-                      >LinkedIn profile</a
-                    >.
-                  </p>
-                </div>
-              </article>
-              <article>
-                <a href="#" class="image">
-                  <picture>
-                    <source srcset="images/kuso.webp" type="image/webp" />
-                    <source srcset="images/kuso.png" type="image/png" />
-                    <img src="images/kuso.png" alt="Kuso" />
-                  </picture>
-                </a>
-                <div class="inner">
-                  <h4>Orchestra Member</h4>
-                  <p>
-                    I am playing the bassoon in a classical orchestra. Check out
-                    our
-                    <a href="http://www.kuso.dk/">kuso homepage</a> for more
-                    infos or go to our
-                    <a href="https://soundcloud.com/kuso_orchestra"
-                      >soundcloud</a
-                    >
-                    to hear us play.
-                  </p>
-                </div>
-              </article>
+
             </div>
-          </div>
+
+        </section>
+<!--Jobs-->
+        <section class="py-10 md:py-16">
+
+            <div class="container max-w-screen-xl mx-auto px-4">
+
+                <h1 class="font-medium text-gray-700 text-3xl md:text-4xl mb-5 px-8">Experience</h1>
+
+
+                <div class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-6 px-8">
+                    <div class="bg-gray-50 px-8 py-10 rounded-md">
+                        <div class="flex justify-between ">
+                            <div>
+                                <h4 class="font-medium text-gray-700 text-lg">Senior User Researcher </h4>
+                        <h5 class="font-medium text-gray-400 text-base mb-4">03|22 - current</h2>
+                            </div>
+                            <div class="w-1/4">
+                                <img src="/assets/image/netsLogoColored.webp" alt="Logo Nets A/S">
+                            </div>
+                            
+                        </div>
+                        
+                        <p class="font-light text-gray-700 text-md mb-4">I collaborate and support PMs, designers, leadership and developers with tangible user insights and actionable design input. I conduct product-specific and foundational user research focused on our B2B digital products accompanying payment services. I apply a broad toolkit, including qual. and quant. methods to fit the research need and resources at hand. </p>
+
+                        <!-- <div class="relative">
+                            <h6 class="font-semibold text-gray-500 text-md relative z-10">See the place here</h6>
+                            <span class="w-32 h-1 bg-blue-200 absolute bottom-1 left-0 z-0"></span>
+                        </div> -->
+                    </div>
+
+                    <div class="bg-gray-50 px-8 py-10 rounded-md">
+                        <div class="flex justify-between ">
+                            <div>
+                                <h4 class="font-medium text-gray-700 text-lg">UX Researcher & Designer</h4>
+                        <h5 class="font-medium text-gray-400 text-base mb-4">09|20 - 02|22</h2>
+                            </div>
+                            <div class="w-1/4">
+                                <img src="/assets/image/Ambu-logo-Red-RGB.png" alt="Logo Ambu A/S">
+                            </div>
+                            
+                        </div>
+
+                        <p class="font-light text-gray-600 text-md mb-4">Supporting physical product development and GUI design, I engaged with HCPs to understand their needs when using and interacting with medical imaging devices. Throughout the design process, I applied various research methods, such as observational field studies, early concept and prototype testing, explorative interviews, and summative user testing. </p>
+
+
+                    </div>
+
+                    <div class="bg-gray-50 px-8 py-10 rounded-md">
+                        <div class="flex justify-between ">
+                            <div>
+                                <h4 class="font-medium text-gray-700 text-lg">UX Analyst </h4>
+                        <h5 class="font-medium text-gray-400 text-base mb-4">01|18 - 05|20</h2>
+                            </div>
+                            <div class="w-1/4">
+                                <img src="/assets/image/logo+EN+version+White.webp" alt="Logo Nets A/S">
+                            </div>
+                            
+                        </div>
+
+                        <p class="font-light text-gray-600 text-base mb-4">I had project responsibility within our UXLab, designing and conducting user test for Medtech clients. When needed, we adopted new research methods from the fields of cognitive science and psychology. I applied usability heuristics and levels of cognition to analyse, iterate and improve visual and written material for clients from the pharma  and public sector.</p>
+
+
+                    </div>
+
+
+
+                </div>
+
+            </div>
+
         </section>
 
-        <!-- Six
-            <section id="six">
-                <div class="container">
-                    <h3>Contact Me</h3>
-                    <p>Integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer non. Adipiscing cubilia elementum integer. Integer eu ante ornare amet commetus.</p>
-                    <form method="post" action="#">
-                        <div class="row gtr-uniform">
-                            <div class="col-6 col-12-xsmall"><input type="text" name="name" id="name" placeholder="Name" /></div>
-                            <div class="col-6 col-12-xsmall"><input type="email" name="email" id="email" placeholder="Email" /></div>
-                            <div class="col-12"><input type="text" name="subject" id="subject" placeholder="Subject" /></div>
-                            <div class="col-12"><textarea name="message" id="message" placeholder="Message" rows="6"></textarea></div>
-                            <div class="col-12">
-                                <ul class="actions">
-                                    <li><input type="submit" class="primary" value="Send Message" /></li>
-                                    <li><input type="reset" value="Reset Form" /></li>
-                                </ul>
+<!--Projects-->
+
+        <section class="py-10 md:py-16">
+
+            <div class="container max-w-screen-xl mx-auto px-4">
+
+                <div class="flex flex-col lg:flex-row justify-between">
+                    <div class="mb-10 lg:mb-0 lg:w-1/3 px-8">
+                        <h1 class="font-medium text-gray-700 text-3xl md:text-4xl mb-5">Projects</h1>
+
+                        <p class="font-normal text-gray-500 text-xs md:text-base">Want to know more - let's talk.  <br> Navigating around NDAs.</p>
+                    </div>
+
+                    <div class="space-y-24 lg:w-2/3 px-8"> 
+                        <div class="flex space-x-6">
+                            <h2 class="font-normal text-gray-700 text-3xl md:text-4xl">01</h2>
+
+                            <span class="w-28 h-0.5 bg-gray-300 mt-5"></span>
+
+                            <div class="w-3/4">
+                                <h2 class="font-normal text-gray-700 text-3xl md:text-4xl mb-5">Archetypes</h2>
+
+                                <p class="font-normal text-gray-500 text-sm md:text-base">For internal stakeholders we have created user archetype descriptions for print and digital media. Instead of  More fitting for a B2B context, the archetypes focused on our users mindset, motivations, needs and behaviours rather than demographics and personal life stories.
+                                    Through foundational explorative and following validating user interviews, 6 parameters with which the 4 archetypes can be described have been identified.</p>
                             </div>
                         </div>
-                    </form>
+                        
+                        <div class="flex space-x-6">
+                            <h2 class="font-normal text-gray-700 text-3xl md:text-4xl">02</h2>
+
+                            <span class="w-28 h-0.5 bg-gray-300 mt-5"></span>
+
+                            <div class="w-3/4">
+                                <h2 class="font-normal text-gray-700 text-3xl md:text-4xl mb-5">From paper to injection mold</h2>
+
+                                <p class="font-normal text-gray-500 text-sm md:text-base">I assisted throughout the full design process from sketch to production of a hand-held medical imaging device. I stood for the planning and execution of various research activities with HCPs including exploratory interviews, concept testing, ergonomic testing, and summative user testing. Besides the research, I helped design the GUI of the touchscreen imaging interface.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex space-x-6">
+                            <h2 class="font-normal text-gray-700 text-3xl md:text-4xl">03</h2>
+                            <span class="w-28 h-0.5 bg-gray-300 mt-5"></span>
+
+                            <div class="w-3/4">
+                                <h2 class="font-normal text-gray-700 text-3xl md:text-4xl mb-5">Mental models</h2>
+
+                                <p class="font-normal text-gray-500 text-sm md:text-base">When communicating complex, abstract or invisible topics, humans often use mental models in figurative speach or visual communication. Together with researchers within microbiology, we investigated how our mental models, represented in illustrations affect HCPs decision for treatment plans. This allowed us further, to create new visual and communication material, drawing on existing mental models while addressing overseen complexity.</p>
+
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </section> -->
-      </div>
 
-      <!-- Footer -->
-      <section id="footer">
-        <div class="container">
-          <ul class="copyright">
-            <li>
-              <a href="mailto: alinemeret.maehr@gmail.com">
-                alinemeret.maehr@gmail.com</a
-              >
-              <br />
-              +45 50 25 58 81
-            </li>
-            <li>
-              Hammelstrupvej 30, 3 th <br />
-              2450 København SV
-            </li>
-          </ul>
-        </div>
-      </section>
-    </div>
+            </div>
 
-    <!-- Scripts -->
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/jquery.scrollex.min.js"></script>
-    <script src="assets/js/jquery.scrolly.min.js"></script>
-    <script src="assets/js/browser.min.js"></script>
-    <script src="assets/js/breakpoints.min.js"></script>
-    <script src="assets/js/util.js"></script>
-    <script src="assets/js/main.js"></script>
-  </body>
+        </section>
+
+<!-- Eduction - replace with table -->
+
+        <section class="py-10 md:py-16">
+
+            <div class="container max-w-screen-xl mx-auto px-12">
+
+                <h1 class="font-medium text-gray-700 text-3xl md:text-4xl mb-5">Education</h1>
+
+
+                <div class="flex flex-col lg:flex-row justify-between">
+                    <div class="space-y-8 md:space-y-16 mb-16 md:mb-0">
+                        <h6 class="font-medium text-gray-400 text-base uppercase">Univeristy</h6>
+
+                        <p class="font-semibold text-gray-500 text-base">University of Aarhus <span class="font-normal text-gray-400">/ Denmark</span></p>
+
+                        <p class="font-semibold text-gray-500 text-base">University of Zurich <span class="font-normal text-gray-400">/ Switzerland</span></p>
+
+
+
+                    </div>
+
+                    <div class="space-y-8 md:space-y-16 mb-16 md:mb-0">
+                        <h6 class="font-medium text-gray-400 text-base uppercase">Title</h6>
+
+                        <p class="font-medium text-gray-500 text-base">MA in Cognitive Semiotics</p>
+
+                        <p class="font-normal text-gray-500 text-base">BA in Linguistics, Communication and Philosophy</p>
+
+
+
+
+                    </div>
+
+                    <div class="space-y-8 md:space-y-16">
+                        <h6 class="font-medium text-gray-400 text-base uppercase">Year</h6>
+
+                        <p class="font-normal text-gray-400 text-base"> 2017</p>
+
+                        <p class="font-normal text-gray-400 text-base">2015</p>
+
+
+
+                    </div>
+                </div>
+                
+            </div>
+
+        </section>
+
+<!--Personal-->
+        <section class="py-10 ">
+
+            <div class="container max-w-screen-xl mx-auto px-4">
+                <h1 class="font-medium text-gray-700 text-3xl md:text-4xl mb-5 px-8">Other</h1>
+
+
+                <div class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 lg:gap-6 px-8">
+                    <div class=" py-4 rounded-md bg-green-100 text-center">
+                        <div class=" flex justify-center rounded-md mb-4">
+                            <img src="/assets/image/garden.svg" alt="" >
+
+                        </div>
+
+                        <h4 class="font-medium text-gray-700 text-lg mb-4">Garden</h4>
+
+                    </div>
+
+
+
+                    <div class=" py-4 rounded-md bg-purple-100 text-center">
+                        <div class=" flex justify-center rounded-md mb-4">
+                            <img src="/assets/image/yarn.svg" alt="" class="">
+                        </div>
+
+                        <h4 class="font-medium text-gray-700 text-lg ">Knitting</h4>
+
+                    </div>
+
+                    <div class=" py-4 rounded-md bg-yellow-100 text-center">
+                        <div class="  flex justify-center rounded-md mb-4 ">
+                            <img src="/assets/image/music.svg" alt="">
+                        </div>
+
+                        <h4 class="font-medium text-gray-700 text-lg">Bassoon</h4>
+
+                    </div>
+                    
+
+                    
+
+                </div>
+
+            </div>
+
+        </section>
+
+<!--Contact-->
+
+        
+        <footer class="py-10 md:py-16 mb-20 md:mb-32 lg::mb-32">
+
+            <div class="container max-w-screen-xl mx-auto px-4">
+
+                <div class="text-center">
+                    <h1 class="font-medium text-gray-700 text-4xl md:text-5xl mb-5">Contact</h1>
+
+
+                    <div class="flex items-center justify-center space-x-8">
+                        <a href="mailto:alinemeret.maehr@gmail.com" class="w-16 h-16 flex items-center justify-center rounded-full hover:bg-gray-200 transition ease-in-out duration-500">
+                            <i data-feather="at-sign" class="text-gray-500 hover:text-gray-700 transition ease-in-out duration-500"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/aline-meret-m%C3%A4hr/" class="w-16 h-16 flex items-center justify-center rounded-full hover:bg-gray-200 transition ease-in-out duration-500">
+                            <i data-feather="linkedin" class="text-gray-500 hover:text-gray-700 transition ease-in-out duration-500"></i>
+                        </a>
+    
+                        <a href="https://github.com/amaehr" class="w-16 h-16 flex items-center justify-center rounded-full hover:bg-gray-200 transition ease-in-out duration-500">
+                            <i data-feather="github" class="text-gray-500 hover:text-gray-700 transition ease-in-out duration-500"></i>
+                        </a>
+    
+
+    
+
+                    </div>
+                </div>
+
+            </div>
+
+        </footer>
+
+
+        <script>
+            feather.replace()
+        </script>
+
+    </body>
 </html>
